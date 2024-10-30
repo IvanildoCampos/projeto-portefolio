@@ -83,7 +83,7 @@ header nav.menu_desktop ul li {
 
 /* estilo do menu mobile */
 
-.btn_abrir_menu i {
+.btn_abrir i {
     color: #00ff08;
     font-size: 40px;
 }
@@ -102,6 +102,7 @@ header nav.menu_desktop ul li {
 
 .menu_mobile.abrir_menu {
     width: 70%;
+    flex-direction: column;
 }
 
 .menu_mobile.abrir_menu ~ .overlay_menu {
