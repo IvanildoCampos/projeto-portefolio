@@ -102,7 +102,6 @@ header nav.menu_desktop ul li {
 
 .menu_mobile.abrir_menu {
     width: 70%;
-    flex-direction: column;
 }
 
 .menu_mobile.abrir_menu ~ .overlay_menu {
@@ -121,6 +120,8 @@ header nav.menu_desktop ul li {
 
 .menu_mobile nav ul {
     text-align: right;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu_mobile nav ul li a {
