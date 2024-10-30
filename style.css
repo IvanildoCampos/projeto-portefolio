@@ -76,7 +76,7 @@ header nav ul {
     display: flex;
 }
 
-header nav .menu_desktop ul li {
+header nav.menu_desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }

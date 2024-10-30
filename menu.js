@@ -1,6 +1,6 @@
 let btnMenu = document.getElementById('btn_menu')
-let menu = document.getElementById('menu_mobile')
-let overlay = document.getElementById('overlay-menu')
+let menu = document.getElementById('btn_mobile')//menu_mobile
+let overlay = document.getElementById('overlay_menu')
 
 btnMenu.addEventListener('click', ()=> {
     menu.classList.add('abrir_menu')
@@ -9,5 +9,5 @@ menu.addEventListener('click', ()=> {
     menu.classList.remove('abrir_menu')
 })
 overlay.addEventListener('click', ()=> {
-    menu.classList.remove('abrir_menu')
+    menu.classList.remove('abrir_menu') 
 })
