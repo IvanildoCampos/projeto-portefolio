@@ -1,3 +1,4 @@
+//abrir e fechar menu
 let btnMenu = document.getElementById('btn_menu')
 let menu = document.getElementById('menu_mobile')
 let overlay = document.getElementById('overlay_menu')//clicar no overlay opacidade e fechar
@@ -9,33 +10,30 @@ menu.addEventListener('click', ()=> {
     menu.classList.remove('abrir_menu')
 })
 
-//captura de dados do formulário e envio
-document.querySelector('form').addEventListener('submit', async (event) => {
-    event.preventDefault();
-    
-    const formData = {
-      nome: event.target[0].value,
-      email: event.target[1].value,
-      celular: event.target[2].value,
-      mensagem: event.target[3].value,
-    };
-  
-    try {
-      const response = await fetch('/enviar-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      
-      if (response.ok) {
-        alert('E-mail enviado com sucesso!');
-      } else {
-        alert('Erro ao enviar o e-mail.');
-      }
-    }
-     catch (error) {
-      alert('Erro ao enviar o e-mail.');
-    }
-  });
+// Inicialize o EmailJS com seu User ID
+(function(){
+    emailjs.init("service_tj0yz0q");
+ })();
+ 
+ document.getElementById("contactForm").addEventListener("submit", function(event) {
+   event.preventDefault(); // Evita o envio padrão do formulário
+ 
+   const serviceID = "service_tj0yz0q"; // Seu Service ID no EmailJS
+   const templateID = "template_a7jjnn9"; // Seu Template ID no EmailJS
+ 
+   const templateParams = {
+     name: document.getElementById("name").value,
+     email: document.getElementById("email").value,
+     telefone: document.getElementById("telefone").value,
+     message: document.getElementById("message").value,
+   };
+ 
+   emailjs.send(serviceID, templateID, templateParams)
+     .then(response => {
+       alert("E-mail enviado com sucesso!");
+       document.getElementById("contactForm").reset(); // Limpa o formulário
+     }, error => {
+       alert("Erro ao enviar o e-mail. Tente novamente.");
+       console.log("Erro:", error);
+     });
+ });
