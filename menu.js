@@ -29,7 +29,7 @@ menu.addEventListener('click', ()=> {
      message: document.getElementById("message").value,
    };
  
-   emailjs.send(serviceID, templateID, templateParams)
+   emailjs.sendForm(serviceID, templateID, templateParams)
      .then(response => {
        alert("E-mail enviado com sucesso!");
        document.getElementById("contactForm").reset(); // Limpa o formulário

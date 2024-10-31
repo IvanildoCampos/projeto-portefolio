@@ -1,207 +1,333 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!--fim google fonts-->
     <!--bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+     defer></script>
     <!--fim bootstrap icons-->
     <script src="menu.js" defer></script>
+
     <title>Agência ICC</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="">
-                    <img src="images/logo_icc.webp" alt="logo da Agência ICC" width="150vw">
-                </a>
-            </div><!--logo-->
+      <div class="interface">
+        <div class="logo">
+          <a href="">
+            <img
+              src="images/logo_icc.webp"
+              alt="logo da Agência ICC"
+              width="150vw"
+            />
+          </a>
+        </div>
+        <!--logo-->
 
         <nav class="menu_desktop">
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Especialidade</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Especialidade</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Projetos</a></li>
+          </ul>
         </nav>
 
         <div class="btn_contato">
-            <a href="https://github.com/IvanildoCampos/" target="_blank">
-                <button>Contato</button>
-            </a>
-        </div><!--btn_contato-->
+          <a href="https://github.com/IvanildoCampos/" target="_blank">
+            <button>Contato</button>
+          </a>
+        </div>
+        <!--btn_contato-->
 
         <div class="btn_abrir" id="btn_menu">
-            <i class="bi bi-list"></i>
+          <i class="bi bi-list"></i>
         </div>
 
         <div class="menu_mobile" id="menu_mobile">
-            <div class="btn_fechar">
-                <i class="bi bi-x-lg"></i>
-            </div><!--btn_fechar-->
+          <div class="btn_fechar">
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <!--btn_fechar-->
 
-            <nav>
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidade</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-
-        </div><!--menu_mobile-->
+          <nav>
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Especialidade</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Projetos</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--menu_mobile-->
         <div class="overlay_menu" id="overlay_menu"></div>
-        </div><!--interface-->
+      </div>
+      <!--interface-->
     </header>
 
     <main>
-        <section class="topo_site">
-            <div class="interface">
-                <div class="flex">
+      <section class="topo_site">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt_topo_esquerdo">
+              <h1>Transformando ideias em realidade digital<span>.</span></h1>
+              <p>
+                Criatividade e inovação andam lado a lado. Com uma combinação
+                única de design impactante, funcionalidade intuitiva e
+                otimização para resultados, estou pronto para criar a presença
+                online dos seus sonhos.
+              </p>
 
-                    <div class="txt_topo_esquerdo">
-                        <h1>Transformando ideias em realidade digital<span>.</span></h1>
-                        <p>Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto para criar a presença online dos seus sonhos.</p>
-                        
-                        <div class="btn_contato">
-                            <a href="#">
-                                <button>Entre em contato</button>
-                            </a>
-                        </div>
+              <div class="btn_contato">
+                <a href="#">
+                  <button>Entre em contato</button>
+                </a>
+              </div>
+            </div>
+            <!--txt topo site-->
 
-                    </div><!--txt topo site-->
+            <div class="img_topo_direito">
+              <img
+                src="images/foto_ivanildo1.jpeg"
+                alt="foto flutuante"
+                width="300vw"
+              />
+            </div>
+            <!--img topo site-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--topo do site-->
 
-                    <div class="img_topo_direito">
-                        <img src="images/foto_ivanildo1.jpeg" alt="foto flutuante" width="300vw">
-                    </div><!--img topo site-->
+      <section class="especialidades">
+        <div class="interface">
+          <h2 class="titulos">MINHAS <span>ESPECIALIDADES.</span></h2>
+          <div class="flex">
+            <div class="especialidades_box">
+              <i class="bi bi-code-square"></i>
+              <h3>Website</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                excepturi obcaecati quaerat, corrupti libero ratione
+                consequuntur veritatis. Fuga cupiditate maxime, eveniet
+                architecto numquam unde, molestias voluptatum recusandae,
+                deserunt temporibus nemo.
+              </p>
+            </div>
+            <!--especialidades box-->
 
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--topo do site-->
+            <div class="especialidades_box">
+              <i class="bi bi-cart"></i>
+              <h3>Loja online</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                earum, consectetur beatae est veniam ipsum minus ab, et debitis
+                ut voluptatibus laborum? Autem quaerat corrupti unde repellendus
+                harum dolore asperiores!
+              </p>
+            </div>
+            <!--especialidades box-->
 
-        <section class="especialidades">
-            <div class="interface">
-                <h2 class="titulos">MINHAS <span>ESPECIALIDADES.</span></h2>
-                <div class="flex">
-                    
-                    <div class="especialidades_box">
-                        <i class="bi bi-code-square"></i>
-                        <h3>Website</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum excepturi obcaecati quaerat, corrupti libero ratione consequuntur veritatis. Fuga cupiditate maxime, eveniet architecto numquam unde, molestias voluptatum recusandae, deserunt temporibus nemo.</p>
-                    </div><!--especialidades box-->
+            <div class="especialidades_box">
+              <i class="bi bi-wordpress"></i>
+              <h3>Blog</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                voluptate? Modi sequi voluptatibus, neque magni, hic corrupti
+                veritatis, eos ab nihil dolores quaerat odit quam laborum omnis
+                totam unde earum?
+              </p>
+            </div>
+            <!--especialidades box-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--especialidades-->
 
-                    <div class="especialidades_box">
-                        <i class="bi bi-cart"></i>
-                        <h3>Loja online</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam earum, consectetur beatae est veniam ipsum minus ab, et debitis ut voluptatibus laborum? Autem quaerat corrupti unde repellendus harum dolore asperiores!</p>
-                    </div><!--especialidades box-->
+      <section class="sobre">
+        <div class="interface">
+          <div class="flex">
+            <div class="img_sobre">
+              <img
+                src="images/foto_ivanildo2.jpeg"
+                alt="foto ivanildo"
+                width="250vw"
+              />
+            </div>
+            <!--img sobre-->
 
-                    <div class="especialidades_box">
-                        <i class="bi bi-wordpress"></i>
-                        <h3>Blog</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, voluptate? Modi sequi voluptatibus, neque magni, hic corrupti veritatis, eos ab nihil dolores quaerat odit quam laborum omnis totam unde earum?</p>
-                    </div><!--especialidades box-->
+            <div class="txt_sobre">
+              <h2 class="titulos">
+                MUITO PRAZER <span>SOU IVANILDO CAMPOS.</span>
+              </h2>
+              <p>
+                Sou um estudante em Análise e Desenvolvimento de Sistemas,
+                dedicado a expandir meus conhecimentos em tecnologias modernas,
+                como em HTML, CSS, JavaScript e React. Minhas experiências até
+                agora me levaram a desenvolver uma paixão por criar interfaces
+                intuitivas e funcionais, aproveitando o poder da tecnologia para
+                transformar ideias em soluções práticas e eficientes.
+              </p>
+              <p>
+                Tenho um forte compromisso com meu desenvolvimento profissional
+                e pessoal. Trabalho com agilidade e dedicação, sempre buscando
+                aprender e aprimorar minhas habilidades. Com espírito
+                colaborativo e facilidade em me comunicar, valorizo o trabalho
+                em equipe, onde acredito que cada projeto é uma oportunidade de
+                crescer, criar e contribuir para o sucesso coletivo.
+              </p>
+              <div class="btn_social">
+                <a
+                  href="https://www.instagram.com/ivanildoocamposs/"
+                  target="_blank"
+                  ><button><i class="bi bi-instagram"></i></button
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/ivanildo-campos-566706231/"
+                  target="_blank"
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+                <a href="https://github.com/IvanildoCampos/" target="_blank"
+                  ><button><i class="bi bi-github"></i></button
+                ></a>
+              </div>
+            </div>
+            <!--txt_sobre-->
+          </div>
+        </div>
+        <!--interface-->
+      </section>
+      <!--sobre-->
 
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--especialidades-->
+      <section class="portifolio">
+        <div class="interface">
+          <h2 class="titulos">MEU <span>PORTIFÓLIO.</span></h2>
+          <div class="flex">
+            <div
+              class="img_port"
+              style="background-image: url(images/img1.jpg)"
+            >
+              <div class="overlay">projeto1</div>
+            </div>
+            <div
+              class="img_port"
+              style="background-image: url(images/img2.jpg)"
+            >
+              <div class="overlay">projeto2</div>
+            </div>
+            <div
+              class="img_port"
+              style="background-image: url(images/img3.jpg)"
+            >
+              <div class="overlay">projeto3</div>
+            </div>
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--portifolio-->
 
-        <section class="sobre">
-            <div class="interface">
-                <div class="flex">
-
-                    <div class="img_sobre">
-                        <img src="images/foto_ivanildo2.jpeg" alt="foto ivanildo" width="250vw">
-                    </div><!--img sobre-->
-
-                    <div class="txt_sobre">
-                        <h2 class="titulos">MUITO PRAZER <span>SOU IVANILDO CAMPOS.</span></h2>
-                        <P>
-                            Sou um estudante em Análise e Desenvolvimento de Sistemas, dedicado a expandir meus conhecimentos em tecnologias modernas, como em HTML, CSS, JavaScript e React. Minhas experiências até agora me levaram a desenvolver uma paixão por criar interfaces intuitivas e funcionais, aproveitando o poder da tecnologia para transformar ideias em soluções práticas e eficientes.
-                        </P>
-                        <P>
-                            Tenho um forte compromisso com meu desenvolvimento profissional e pessoal. Trabalho com agilidade e dedicação, sempre buscando aprender e aprimorar minhas habilidades. Com espírito colaborativo e facilidade em me comunicar, valorizo o trabalho em equipe, onde acredito que cada projeto é uma oportunidade de crescer, criar e contribuir para o sucesso coletivo.
-                        </P>
-                        <div class="btn_social">
-                            <a href="https://www.instagram.com/ivanildoocamposs/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.linkedin.com/in/ivanildo-campos-566706231/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/IvanildoCampos/" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                        </div>
-                    </div><!--txt_sobre-->
-                </div>
-            </div><!--interface-->
-        </section><!--sobre-->
-
-        <section class="portifolio">
-            <div class="interface">
-                <h2 class="titulos">MEU <span>PORTIFÓLIO.</span></h2>
-                <div class="flex">
-                    <div class="img_port" style="background-image: url(images/img1.jpg);">
-                        <div class="overlay">
-                            projeto1
-                        </div>
-                    </div>
-                    <div class="img_port" style="background-image: url(images/img2.jpg);">
-                        <div class="overlay">
-                            projeto2
-                        </div>
-                    </div>
-                    <div class="img_port" style="background-image: url(images/img3.jpg);">
-                        <div class="overlay">
-                            projeto3
-                        </div>
-                    </div>
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--portifolio-->
-
-        <section class="formulario">
-            <div class="interface">
-                <h2 class="titulos">FALA <span>COMIGO.</span></h2>
-                <form method="post" action="enviar.email.js" id="contactForm">
-                    <input type="text" name="nome" id="nome" placeholder="seu nome:" required>
-                    <input type="text" name="email" id="email" placeholder="seu e-mail:" required>
-                    <input type="text" name="telefone" id="telefone" placeholder="seu telefone">
-                    <textarea name="mensagem" placeholder="sua mensagem" id="mensagem" required></textarea>
-                    <div class="btn_enviar"><input type="submit" value="enviar"></div>
-                </form>
-            </div><!--interface-->
-        </section><!--formulario-->
-
+      <section class="formulario">
+        <div class="interface">
+          <h2 class="titulos">FALA <span>COMIGO.</span></h2>
+          <form method="post" action="enviar.email.js" id="contactForm">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="seu nome:"
+              required
+            />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="seu e-mail:"
+              required
+            />
+            <input
+              type="text"
+              name="telefone"
+              id="telefone"
+              placeholder="seu telefone"
+            />
+            <textarea
+              name="mensagem"
+              placeholder="sua mensagem"
+              id="mensagem"
+              required
+            ></textarea>
+            <div class="btn_enviar"><input type="submit" value="enviar" /></div>
+          </form>
+        </div>
+        <!--interface-->
+      </section>
+      <!--formulario-->
     </main>
 
     <footer>
-        <div class="interface">
-            <div class="line_footer">
-                <div class="flex">
+      <div class="interface">
+        <div class="line_footer">
+          <div class="flex">
+            <div class="logo_footer">
+              <img src="images/logo_icc.webp" alt="logo" width="150vw" />
+            </div>
+            <!--logo_footer-->
 
-                    <div class="logo_footer">
-                        <img src="images/logo_icc.webp" alt="logo" width="150vw">
-                    </div><!--logo_footer-->
+            <div class="btn_social">
+              <a
+                href="https://www.instagram.com/ivanildoocamposs/"
+                target="_blank"
+                ><button><i class="bi bi-instagram"></i></button
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/ivanildo-campos-566706231/"
+                target="_blank"
+                ><button><i class="bi bi-linkedin"></i></button
+              ></a>
+              <a href="https://github.com/IvanildoCampos/" target="_blank"
+                ><button><i class="bi bi-github"></i></button
+              ></a>
+            </div>
+            <!--bnt_social-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--line_footer-->
 
-                    <div class="btn_social">
-                        <a href="https://www.instagram.com/ivanildoocamposs/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                        <a href="https://www.linkedin.com/in/ivanildo-campos-566706231/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                        <a href="https://github.com/IvanildoCampos/" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                    </div><!--bnt_social-->
-
-                </div><!--flex-->
-            </div><!--line_footer-->
-
-            <div class="line_footer borda">
-                <p><i class="bi bi-envelope-at"></i><a href="mailto:ivanildcampos1998@gmail.com" target="_blank">ivanildocampos1998@gmail.com</a></p>
-            </div><!--line_footer-->
-        </div><!--interface-->
+        <div class="line_footer borda">
+          <p>
+            <i class="bi bi-envelope-at"></i
+            ><a href="mailto:ivanildcampos1998@gmail.com" target="_blank"
+              >ivanildocampos1998@gmail.com</a
+            >
+          </p>
+        </div>
+        <!--line_footer-->
+      </div>
+      <!--interface-->
     </footer>
-
-</body>
+  </body>
 </html>
