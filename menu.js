@@ -11,8 +11,9 @@ menu.addEventListener('click', ()=> {
 })
 
 // Inicialize o EmailJS com seu User ID
+//https://cdn.emailjs.com/dist/email.min.js
 (function(){
-    emailjs.init("service_tj0yz0q");
+    emailjs.init("u214o-KY6xUsJVFlk");
  })();
  
  document.getElementById("contactForm").addEventListener("submit", function(event) {
