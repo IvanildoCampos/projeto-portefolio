@@ -83,6 +83,10 @@ header nav.menu_desktop ul li {
 
 /* estilo do menu mobile */
 
+.btn_abrir {
+    display: none;
+}
+
 .btn_abrir i {
     color: #00ff08;
     font-size: 40px;
@@ -401,6 +405,9 @@ footer .line_footer p a {
     /* header */
     .menu_desktop, .btn_contato{
         display: none;
+    }
+    .btn_abrir{
+        display: block;
     }
     /* topo do site */
     section.topo_site .flex{

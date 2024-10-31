@@ -167,11 +167,11 @@
         <section class="formulario">
             <div class="interface">
                 <h2 class="titulos">FALA <span>COMIGO.</span></h2>
-                <form action="">
-                    <input type="text" placeholder="seu nome:" required>
-                    <input type="text" placeholder="seu e-mail:">
-                    <input type="text" placeholder="seu celular:">
-                    <textarea placeholder="sua mensagem" required></textarea>
+                <form method="post" action="enviar.php">
+                    <input type="text" name="nome" id="nome" placeholder="seu nome:" required>
+                    <input type="text" name="email" id="email" placeholder="seu e-mail:">
+                    <input type="text" name="telefone" id="telefone" placeholder="seu telefone">
+                    <textarea name="mensagem" placeholder="sua mensagem" required></textarea>
                     <div class="btn_enviar"><input type="submit" value="enviar"></div>
                 </form>
             </div><!--interface-->
