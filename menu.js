@@ -17,7 +17,7 @@ menu.addEventListener('click', ()=> {
     emailjs.init("u214o-KY6xUsJVFlk");
  })();
 
- window.onload = function {
+ window.onload = function() {
   document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita o envio padrão do formulário
   
@@ -40,4 +40,5 @@ menu.addEventListener('click', ()=> {
         console.log("Erro:", error);
       });
   });
-}
+ }
+  
